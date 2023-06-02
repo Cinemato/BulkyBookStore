@@ -9,10 +9,10 @@ namespace Bulky.Models
         public int Id { get; set; }
         [Required]
         [MaxLength(30)]
-        [DisplayName("Category Name")]
+        [Display(Name = "Category Name")]
         public string Name { get; set; } = string.Empty;
         [Range(1, 100)]
-        [DisplayName("Display Order")]
+        [Display(Name = "Display Order")]
         public int DisplayOrder { get; set; }
     }
 }
